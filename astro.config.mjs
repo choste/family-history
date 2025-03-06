@@ -6,11 +6,13 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: {
-				github: 'https://github.com/withastro/starlight',
-			},
-			sidebar: [],
+			title: 'Family History',
+			social: {},
+			sidebar: [
+				{
+					slug: 'family/amos_doris'
+				},
+			],
 		}),
 	],
 });
